@@ -21,18 +21,21 @@
         </div>
         <div class="donation-container">
             <img src="./image/coin.png" alt="Coin Image" class="coin-image" />
-            <span id="donation-amount">0</span>
+            <span id="donation-amount"></span>
         </div>
         <div class="button-container">
-            <input type="text" id="name-input" placeholder="Enter your name" />
+            <input type="text" id="name-input" placeholder="Enter your name (optional)" />
             <input type="text" id="donation-input" placeholder="Enter donation amount (in VND)" />
             <button id="donate-button">Donate</button>
-            <button>Pray</button>
+            <button id="pray-button">Pray</button>
             <button>Do nothing</button>
         </div>
-        <div>
-            <p id="donation-message">You have donated <span id="donation-amount-display">[number here]</span> VND.</p>
-            <p id="prayer-message">You have prayed for blessings.</p>
+        <div class="message-container">
+            <p id="donation-message" style="display: none;"><span id="donator-name"></span> donated <span
+                    id="donation-amount-display"></span>
+                to God.</p>
+            </p>
+            <p id="prayer-message" style="display: none;">You have prayed for blessings.</p>
         </div>
     </main>
 </body>
